@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://patriotkusuma.github.io/post/variabel-dan-konstanta-dalam-c--/</loc>
+    <lastmod>2018-11-04T09:42:41+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://patriotkusuma.github.io/post/c---apa-sih-itu/</loc>
+    <lastmod>2018-11-03T13:28:12+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://patriotkusuma.github.io/post/lorem-ipsum/</loc>
+    <lastmod>2018-11-03T13:14:09+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://patriotkusuma.github.io/about/</loc>
+    <lastmod>2015-04-14T22:17:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://patriotkusuma.github.io/</loc>
+    <lastmod>2018-11-04T09:42:41+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://patriotkusuma.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://patriotkusuma.github.io/post/</loc>
+    <lastmod>2018-11-04T09:42:41+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://patriotkusuma.github.io/categories/programming/</loc>
+    <lastmod>2018-11-03T13:14:09+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://patriotkusuma.github.io/categories/programming-c&#43;&#43;/</loc>
+    <lastmod>2018-11-04T09:42:41+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://patriotkusuma.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://patriotkusuma.github.io/categories/testing/</loc>
+    <lastmod>2018-11-03T13:14:09+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://patriotkusuma.github.io/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 04 Nov 2018 09:42:41 +0700</lastBuildDate>
+    
+	<atom:link href="https://patriotkusuma.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VARIABEL DAN KONSTANTA DALAM C&#43;&#43;</title>
+      <link>https://patriotkusuma.github.io/post/variabel-dan-konstanta-dalam-c--/</link>
+      <pubDate>Sun, 04 Nov 2018 09:42:41 +0700</pubDate>
+      
+      <guid>https://patriotkusuma.github.io/post/variabel-dan-konstanta-dalam-c--/</guid>
+      <description>1. Nama Variabel Nama variabel bisa terdiri dari huruf, angka, dan tanda underscore _, tetapi tidak boleh diawali dengan sebuah angka. Nama variabel juga tidak boleh terdiri dari keyword-keyword dari C++ seperti if, for,else, atau while.
+Beberapa Keyword pada C++
+            and and_eq asm auto bitand   bitar bool break case catch   char class const const_case continue   default delete do double dynamic_cast   else enum explicit export extern   false float for friend goto   if inline int long mutable   namespace new not not_eq operator   or or_eq private protected public   registeed return short signet try   sizeof static_cast struct switch unsigned   template this throw true wchar_t   typedef typeid typename union    using virtual void volatile    while xor xor_eq     reinterpret_cast        nama variabel juga bersifat case sensitif sehingga nama, Nama, NaMa, NAMA, dan namA akan dianggap sebagai nama variabel yang berbeda.</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;, Apa Sih Itu?</title>
+      <link>https://patriotkusuma.github.io/post/c---apa-sih-itu/</link>
+      <pubDate>Sat, 03 Nov 2018 13:28:12 +0700</pubDate>
+      
+      <guid>https://patriotkusuma.github.io/post/c---apa-sih-itu/</guid>
+      <description>C++ Sejarah Singkat Bahasa C Bahasa pemrograman C++ dikembangkan di Bell lab pada awal tahun 1970-an. Bahasa itu diturunkan dari bahasa sebelumnya, yaitu B yang diturunkan dari bahasa sebelumnya, yaitu BCL. Awalnya, bahasa tersebut dirancang sebagai bahasa pemrograman yang dijalankan pada sistem operasi UNIX. Pada perkembangannya, versi ANSI (American National Standard Institue) C menjadi versi yang dominan. Meskipun versi tersebut sekarang jarang dipakai dalam pengembangan-pengembangan baru, tetapi versi itu masih banyak dipakai dalam beberapa pengembangan sistem dan jaringan maupun untuk sistem embedded.</description>
+    </item>
+    
+    <item>
+      <title>Lorem Ipsum</title>
+      <link>https://patriotkusuma.github.io/post/lorem-ipsum/</link>
+      <pubDate>Sat, 03 Nov 2018 13:14:09 +0700</pubDate>
+      
+      <guid>https://patriotkusuma.github.io/post/lorem-ipsum/</guid>
+      <description>Lorem Ipsum Sint eiusmod nisi sint mollit ut amet anim deserunt pariatur aliquip. Commodo exercitation officia elit dolore in deserunt. Deserunt nulla cillum fugiat aute dolor amet reprehenderit pariatur exercitation in commodo sunt voluptate irure. In tempor reprehenderit amet aliquip ad commodo Lorem occaecat ullamco. Ex aliquip quis laborum velit veniam nulla quis. Dolore cillum veniam laboris occaecat cupidatat excepteur reprehenderit ad dolore commodo cillum consequat. Proident fugiat commodo laborum ad et labore est sunt dolor nisi.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://patriotkusuma.github.io/about/</link>
+      <pubDate>Tue, 14 Apr 2015 22:17:00 +0000</pubDate>
+      
+      <guid>https://patriotkusuma.github.io/about/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Yow !</description>
+    </item>
+    
+  </channel>
+</rss>

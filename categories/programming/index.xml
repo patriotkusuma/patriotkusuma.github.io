@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on </title>
+    <link>https://patriotkusuma.github.io/categories/programming/</link>
+    <description>Recent content in Programming on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 03 Nov 2018 13:14:09 +0700</lastBuildDate>
+    
+	<atom:link href="https://patriotkusuma.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lorem Ipsum</title>
+      <link>https://patriotkusuma.github.io/post/lorem-ipsum/</link>
+      <pubDate>Sat, 03 Nov 2018 13:14:09 +0700</pubDate>
+      
+      <guid>https://patriotkusuma.github.io/post/lorem-ipsum/</guid>
+      <description>Lorem Ipsum Sint eiusmod nisi sint mollit ut amet anim deserunt pariatur aliquip. Commodo exercitation officia elit dolore in deserunt. Deserunt nulla cillum fugiat aute dolor amet reprehenderit pariatur exercitation in commodo sunt voluptate irure. In tempor reprehenderit amet aliquip ad commodo Lorem occaecat ullamco. Ex aliquip quis laborum velit veniam nulla quis. Dolore cillum veniam laboris occaecat cupidatat excepteur reprehenderit ad dolore commodo cillum consequat. Proident fugiat commodo laborum ad et labore est sunt dolor nisi.</description>
+    </item>
+    
+  </channel>
+</rss>
