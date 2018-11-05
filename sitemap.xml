@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://patriotkusuma.github.io/post/logika-proposional-dan-predikat/</loc>
+    <lastmod>2018-11-05T11:16:40+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://patriotkusuma.github.io/post/variabel-dan-konstanta-dalam-c--/</loc>
     <lastmod>2018-11-04T09:42:41+07:00</lastmod>
   </url>
@@ -24,18 +29,25 @@
   
   <url>
     <loc>https://patriotkusuma.github.io/</loc>
-    <lastmod>2018-11-04T09:42:41+07:00</lastmod>
+    <lastmod>2018-11-05T11:16:40+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://patriotkusuma.github.io/categories/logika-informatika-programming/</loc>
+    <lastmod>2018-11-05T11:16:40+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://patriotkusuma.github.io/categories/</loc>
+    <lastmod>2018-11-05T11:16:40+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://patriotkusuma.github.io/post/</loc>
-    <lastmod>2018-11-04T09:42:41+07:00</lastmod>
+    <lastmod>2018-11-05T11:16:40+07:00</lastmod>
     <priority>0</priority>
   </url>
   
