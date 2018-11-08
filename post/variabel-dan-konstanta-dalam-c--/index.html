@@ -302,6 +302,138 @@ char ch;
 </code></pre>
 
 <p>Deklarasi-deklarasi di atas menentukan i, j, dan count menggunakan tipe integer, sum dan product menggunakan tipe float, dan ch menggunakan tipe char.</p>
+
+<p>Deklarasi sebuah variabel memiliki bentuk umum.</p>
+
+<p><strong>Type Nama_variabel</strong></p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>Type</strong></td>
+<td>menentukan tipe variabel</td>
+</tr>
+
+<tr>
+<td><strong>Nama_variabel</strong></td>
+<td>menentukan nama variabel yang</td>
+</tr>
+</tbody>
+</table>
+
+<p>Variabel bisa diinisialisasi pada saat dideklarasikan dengan memberikan nilai-nilai.</p>
+
+<p><code>contoh</code></p>
+
+<pre><code class="language-c++">int i, j, count = ();
+float sum = ().(), product;
+char ch = '7';
+</code></pre>
+
+<p>yang memberikan nilai () untuk variabel count, dan memberikan nilai ().() untuk variabel sum. Variabel ch diberi nilai awalan berupa karakter <code>7</code>. Variabel-variabel yang tidak diberi nilai awal tidak akan diberi nilai (tidak diberi nilai()).</p>
+
+<p><em>Catatan</em></p>
+
+<pre><code>C++ juga memungkinkan pemrograman untuk menentukan tipe data sendiri (user define data type).
+Penentuan itu meliputi juga penentuan class.
+</code></pre>
+
+<h2 id="3-mendefinisikan-konstanta-pada-c">3. Mendefinisikan Konstanta pada C++</h2>
+
+<p>Ada 3 teknik yang digunakan untuk mendefinisikan konstanta pada C++. Teknik pertama berasal dari bahasa pemrograman C. Konstanta didefinisikan menggunakan preprosesor directive <em>#define</em>. <em>Preprosesor</em> adalah program yang memodifikasi file-file source code pada saat sebelum kompilasi. Prerposesor yang umum digunakan adalah <em>#include</em> yang digunakan untuk menambahkan kode-kode tambahan ke dalam kode program kita. Ada beberapa preprosesor yang lain di antaranya <em>#if</em> dan <em>#endif</em>. Contoh penggunaan preposesor <em>#define</em>:</p>
+
+<pre><code class="language-C++">#define pi 3.14515
+#define id_no 12345
+</code></pre>
+
+<p>Di mana pun variabel-variabel pi dan id_no muncul pada program kita, preprosesor akan menggantinya dengan nilai-nilai yang telah ditentukan sehingga di mana pun <em>pi</em> digunakan, nilainya akan diganti dengan <em>3.1415</em>. Compiler akan melihat nilai <em>3.1415</em> pada baris program dan bukan <em>pi</em>. Teknik itu sudah out of date dan jarang digunakan.</p>
+
+<p><strong>Const</strong></p>
+
+<p>Teknik kedua adalah menggunakan keyword const saat mendeklarasikan variabel. Ketika digunakan, const akan menjaga nilai variabel agar tetap tidak berubah ketika ada baris-baris program yang akan mengubah varibel tersebut.</p>
+
+<pre><code class="language-c++">const float pi = 3.1415
+const in id_no = 12345;
+</code></pre>
+
+<p>Manfaat utama dibandingkan teknik yang pertama, tipe dari konstanta ditentukan. Float untuk <em>pi</em> dan int untuk <em>id_no</em> sehingga compiler bisa melakukan pengecekan tipe.</p>
+
+<p><strong>Enumeration</strong></p>
+
+<p>Teknik ketiga adalah enumeration. Enumeration mendefinisikan tipe baru dan batasan nilai hanya pada kumpulan nilai yang ditentukan oleh programmer. Sebagai contoh:</p>
+
+<pre><code class="language-c++">enum COLOR { RED, BLUE, GREEN};
+enum SHAPE { SQUARE, RECTANGLE, TRIANGLE, CIRCLE, ELLIPSE};
+</code></pre>
+
+<p>Setiap enumerator memiliki nilai integer, kecuali ditentukan nilainya. Enumerator pertama akan memiliki nilai (). Nilai bertambah satu-satu untuk setiap penambahan enumerasi. Sebagai contoh, RED memiliki nilai (), BLUE memiliki nilai 1, dan GREEN memiliki nilai 2. Sementara itu SQUARE bernilai 0, RECTANGLE bernilai 1, dan seterusnya.</p>
+
+<p>Nilai dari setiap enumerator bisa juga ditentukan secara khusus.</p>
+
+<pre><code class="language-c++">enum SHAPE(SQUARE=5, RECTANGLE, TRIANGLE=17, CIRCLE, ELLIPSE);
+</code></pre>
+
+<p>Disini SQUARE bernilai 5, RECTANGLE bernilai 6, TRIANGLE bernilai 17, CIRCLE bernilai 18, dan ELLIPSE bernilai 19. Kenuntungan dari enumerasi adalah terdapatnya tipe dan batasan nilai yang nantinya akan dicek ketika kompilasi.</p>
+
+<p>Kode yang bisa anda coba</p>
+
+<pre><code class="language-c++">#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+    enum color {RED, GREEN, BLUE};
+    color myColor = 5;
+
+    if(myColor == RED)
+    {
+        cout &lt;&lt; &quot;panas&quot; &lt;&lt; endl;
+    }
+    if (myColor == CLUE)
+    {
+        cout &lt;&lt; &quot;dingin&quot; &lt;&lt; endl;
+    }
+    if (myColor == GREEN)
+    {
+        cout &lt;&lt; &quot;sejuk&quot; &lt;&lt; endl;
+    }
+
+    return 0;
+}
+</code></pre>
+
+<p>Jika program diatas dikompilasi, maka tidak akan dihasilkan output apa pun. Hal itu disebabkan olehvariabel mycolor yang diberi tipe color dengan batasan nilai yang diberikan hanya 0, 1, dan 2 sehingga nilai 5 tidak legal sehingga program tidak memberikan output.</p>
+
+<p>Untuk memberikan pemahaman yang lebih mendalah, mari kita coba baris program berikut</p>
+
+<pre><code class="language-c++">#include &lt;iostream&gt;
+#define pi 3.14
+using namespace std;
+int main()
+{
+    float luas;
+    float jari;
+    cout &lt;&lt; &quot;isikan nilai jari-jari: &quot;;
+    cin &gt;&gt; jari;;
+    luas = 4 * pi * jari * jari;
+    cout &lt;&lt; &quot;Luas BOla:  &quot; &lt;&lt; luas;
+    return 0;
+}
+</code></pre>
+
+<p><em>QUIZ</em></p>
+
+<ol>
+<li><p>Isikan nilai jari = 10, apakah output programmnya?</p></li>
+
+<li><p>Ubahlah deklarasi <strong>#define</strong> dengan deklarasi const, tetapi output program tetap sama dengan prgram di atas.</p></li>
+</ol>
     
         </div>
     </section>
@@ -340,13 +472,13 @@ char ch;
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://patriotkusuma.github.io/post/logika-proposional-dan-predikat/">Logika Proposional Dan Predikat</a></li>            
-        
-          <li><a href="https://patriotkusuma.github.io/post/lorem-ipsum/">Lorem Ipsum</a></li>            
+          <li><a href="https://patriotkusuma.github.io/post/langkah-langkah-pembuatan-program/">Langkah Langkah Pembuatan Program</a></li>            
         
           <li><a href="https://patriotkusuma.github.io/post/c---apa-sih-itu/">C&#43;&#43;, Apa Sih Itu?</a></li>            
         
-                      
+          <li><a href="https://patriotkusuma.github.io/post/logika-proposional-dan-predikat/">Logika Proposional Dan Predikat</a></li>            
+        
+          <li><a href="https://patriotkusuma.github.io/post/lorem-ipsum/">Lorem Ipsum</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
@@ -373,7 +505,7 @@ char ch;
               
                 <p>Logika Proposional adalah logika dasar pada pemrograman yang harus dipahami oleh para programer karena logika dasar inilah yang menjadi sasar penentuan nilai kebenaran dari suatu pernyataan, yaitu true (benar) dan false (salah) pada pengujian kondisi dalam pemrograman.
 Beberapa pernyataa (statement) dapat berlangsung diterima kebenarannya tanpa harus diketahui kebenaran pembentuk-pembentuknya, seperti pernyataan berikut.
-&quot; Jawa memiliki jumlah balita lebih bnyak dibanding Sumatra atau Jawa memiliki jumlah balita lebih sedikt dibanding Sumatra. &quot;  Kalimat di atas langsung dapat diterima kebenarannya tanpa harus ada orang yang datang ke Jawa dan Sumatra untuk membuktikan apakah jumlah balita di Jawa memang lebih banyak dari Sumatra, atau sebaliknya. ...  </p>
+&quot; Jawa memiliki jumlah balita lebih bnyak dibanding Sumatra atau Jawa memiliki jumlah balita lebih sedikt dibanding Sumatra. ...  </p>
               
           </section>
       </a>

@@ -6,10 +6,20 @@
     <description>Recent content in Programming C&#43;&#43; on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 04 Nov 2018 09:42:41 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 08 Nov 2018 15:09:53 +0700</lastBuildDate>
     
 	<atom:link href="https://patriotkusuma.github.io/categories/programming-c++/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Langkah Langkah Pembuatan Program</title>
+      <link>https://patriotkusuma.github.io/post/langkah-langkah-pembuatan-program/</link>
+      <pubDate>Thu, 08 Nov 2018 15:09:53 +0700</pubDate>
+      
+      <guid>https://patriotkusuma.github.io/post/langkah-langkah-pembuatan-program/</guid>
+      <description>Beberapa langkah yang harus diperhatikan oleh pemrogram sebelum mengimplementasikan suatu permasalahan dalam program adalah :
+ Mendefinisikan masalah Mencari solusi untuk masalah Memilih teknik pemecahan masalah dan algoritma Menulis program melakukan testing dan debuging Melakukan dokumentasi Melakukan pemeliharaan.  1. Mendefinisikan Masalah Tujuan dari mendefinisikan masalah adalah untuk memahami permasalahan secara mendalam. Langkah ini akan berkaitan ddengan apa yang akan diinputkan pada program, perintah-perintah apa yang akan digunakan dan bagaimana bentuk ouputnya.</description>
+    </item>
     
     <item>
       <title>VARIABEL DAN KONSTANTA DALAM C&#43;&#43;</title>
