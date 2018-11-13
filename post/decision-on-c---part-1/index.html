@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en-US" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Decision on C&#43;&#43; Part 1 &middot; </title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://patriotkusuma.github.io/favicon.ico" />
+    <link rel="canonical" href="https://patriotkusuma.github.io/post/decision-on-c---part-1/" />
+
+     <meta name="description" content="Decision atau pengambilan keputusan merupakan salah satu implementasi algritma dalam pemecahan suatu masalah dengan berbagai alternatif jawaban yang tersedia da" /> 
+
+     
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="https://patriotkusuma.github.io/uploads/decision.jpeg"/>
+    
+ 
+    <meta name="twitter:title" content="Decision on C&#43;&#43; Part 1"/>
+    <meta name="twitter:description" content="Decision atau pengambilan keputusan merupakan salah satu implementasi algritma dalam pemecahan suatu masalah dengan berbagai alternatif jawaban yang tersedia da"/>
+    <meta name="twitter:url" content="https://patriotkusuma.github.io/post/decision-on-c---part-1/" />
+    <meta name="twitter:site" content="@"/>
+
+    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="Decision on C&#43;&#43; Part 1 &middot; iPat" />
+    <meta property="og:url" content="https://patriotkusuma.github.io/post/decision-on-c---part-1/" />
+    <meta property="article:publisher" content="https://www.facebook.com/patriotkusumasejati" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Decision atau pengambilan keputusan merupakan salah satu implementasi algritma dalam pemecahan suatu masalah dengan berbagai alternatif jawaban yang tersedia da" />
+
+    <meta property="article:published_time" content="2018-11-12T17:03:10&#43;07:00" />
+    
+
+    <meta property="og:image" content="https://patriotkusuma.github.io/uploads/decision.jpeg"/>
+
+
+    <meta name="generator" content="Hugo 0.49.2" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://patriotkusuma.github.io/built/screen.css" /> 
+    <link rel="stylesheet" type="text/css" href="https://patriotkusuma.github.io/css/casper-two.css" /> 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+    
+
+     
+
+    <style>
+    body{
+        user-select: none;
+    }
+    </style>
+
+</head>
+
+
+<body class="post-template">
+  <div class="site-wrapper"> 
+
+<header class="site-header outer">
+  <div class="inner">
+    <nav class="site-nav">
+      <div class="site-nav-left">
+
+        <ul class="nav" role="menu">
+        
+        
+        
+            <li class="" role="menuitem">
+              <a href="https://patriotkusuma.github.io/">Home</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="https://patriotkusuma.github.io/about/">About</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="https://patriotkusuma.github.io/categories/">Categories</a>
+            </li>
+        
+      </ul></div>
+
+      <div class="site-nav-right">
+        <div class="social-links">
+                    <a class="social-link social-link-fb" href="https://www.facebook.com/patriotkusumasejati" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg></a>
+
+                    
+
+                    <a class="social-link" href="https://github.com/patriotkusuma" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+
+                    
+
+                    
+        </div>  
+            
+      </div>
+
+    </nav>  
+
+  </div>
+</header>
+
+<main id="site-main" class="site-main outer" role="main" >
+  <div class="inner">
+    
+      <article class="post-full post"> 
+    <header class="post-full-header">
+        <section class="post-full-meta">
+            <time class="post-full-meta-date" datetime="2018-11-12">12 November 2018</time>
+        </section>
+        <h1 class="post-full-title">Decision on C&#43;&#43; Part 1</h1>
+    </header>
+    
+    <figure class="post-full-image" style="background-image: url(https://patriotkusuma.github.io/uploads/decision.jpeg)">
+    </figure>
+
+    <section class="post-full-content">
+        <div class="kg-card-markdown">
+        
+
+<p>Decision atau pengambilan keputusan merupakan salah satu implementasi algritma dalam pemecahan suatu masalah dengan berbagai alternatif jawaban yang tersedia dan anda harus mengambil keputusan untuk memilih salah satu jawaban yang tepat. Perintah pengambilan keputusan (<em>decision</em>) digunakan untuk memilih salah satu alternatif jawaban yang tepat dari pilihan yang ada. C++ menyediakan dua perintah pengambilan keputusan yaitu perintah <em>IF</em> dan perintah <em>SWITCH</em> yang disertai dengan <em>CASE</em>.</p>
+
+<h2 id="1-pernyataan-if">1. Pernyataan IF</h2>
+
+<p>Pernyataan if digunakan untuk memilih satu dari 2 atau lebih alternatif jawaban yang tersedia. Jika test condition bernilai <em>true</em>, maka blok-blok kode akan dijalankan. Jika tidak, maka blok-blok kode tersebut dilewati.</p>
+
+<p>Perintah if memiliki bentuk umum:</p>
+
+<pre><code>if(kondisi)
+    pernyataan
+</code></pre>
+
+<p>Bentuk di atas mempunyai arti jika kondisi bernilai benar maka pernyataan di bawahnya akan dikerjakan. jadi perintah if merupakan perintah yang menentukan pengambilan keputusan bahwa pernyataan iut akan dikerjakan atau tidak.</p>
+
+<p>Contoh:</p>
+
+<pre><code>Jika nilai pembelian lebih dari 100000 maka akan mendapat kan discount 10%.
+</code></pre>
+
+<p>Pernyataan tersebut dapat ditulis:</p>
+
+<pre><code class="language-pseudocode">discount = 0;
+if (nilai_beli &gt; 100000)
+    discount = (10/100) * nilai_beli;
+</code></pre>
+
+<p>Contoh penggalam program diatas menunjukkan nilai awal discount adalah 0. Kemudian baris di bawahnya menerangkan proses pengujian dan pengambilan keputusan di mana apabila nilai pembelian melebihi 100000 maka akan mendapatkan discount sebesar 10% dari niali pembelian.</p>
+
+<p>Pada perintah IF dapa pula diikuti oleh pernyataan majemuk. Untuk itu digunakan tanda <code>{}</code> untuk menandai awal dan akhir pernyataan yang akan dikerjakan jika pernyataan benar.</p>
+
+<p>Bentuknya adalah sebagai berikut:</p>
+
+<pre><code>if(kondisi)
+{
+    pernyataan1
+    pernyataan2
+    pernyataan3
+    ...
+    pernyataan
+}
+
+</code></pre>
+
+<p>Contoh :</p>
+
+<pre><code>discount=0;
+if(nilai_beli&gt;100000)
+{
+    discount = (10/100)*nilai_beli;
+    bonus = &quot;payung&quot;;
+}
+</code></pre>
+
+<p>Contoh penggalan program di atas menunjukkan nilai awal discount adalah 0. Kemudian baris di bawahnya menerangkan proses pengujian dan pengambilan keputusan di mana apabila nilai pembelian melebihi 100000 akan mendapatkan discount sebesar 10% dan nilai pembelian. Selain itu juga akan mendapatkan bonus.</p>
+
+<h2 id="2-perintah-if-else">2. Perintah If-Else</h2>
+
+<p>Perintah if-else mempunyai bentuk umum yaitu:</p>
+
+<pre><code>if(kondisi)
+    pernyataan1
+else
+    pernyataan2
+</code></pre>
+
+<p>Bentuk ini mempunyai arti: jika kondisi benar maka pernyataan1 akan dikerjakan dan jika kondisi salah maka pernyataan2 yang akan dikerjakan.</p>
+
+<p>Misalkan ada suatu permasalahan dimana Anda diminta membuat algoritma dan program untuk menentukan seorang siswa lulus atau tidak berdasarkan nilai yang dimasukkan. Kondisi yang ada adalah jika nilai siswa terseut lebih besar dari 70 maka siswa tersebut lulus. Sebaliknya jika nilai siswa terseut kurang dari atau sama dengan 70 maka siswa tersebut tidak lulus.</p>
+
+<p>Algoritma dari permasalahan di atas:</p>
+
+<ol>
+<li>Masukkan nilai siswa</li>
+<li>Jika nilai lebih besar dari 70</li>
+<li>Cetak Lulus</li>
+<li>Jika nilai kurang dari atau sama dengan 70</li>
+<li>Cetak Tidak Lulus</li>
+<li>Tampilkan keterangan Lulus atau Tidak Lulus</li>
+</ol>
+
+<p>Keterangan dari algoritma di atas adalah</p>
+
+<p>Pada baris pertama, anda diminta untuk memasukkan variabel nilai sebagai input yang akan digunakan sebagai dasar untuk pengujian dan pengambilan keputusan. Variabel nilai tersebut bertipe integer. Kemudian pada baris kedua dan ketiga menyebutkan bahwa nilai tersebut yang sudah dimasukkan akan diuji apakah nilai &gt; 70? Kalau jawabannya iya, maka cetak Lulus. Kalau jawabannya tidak maka algoritma akan pindah ke baris ke empat dan kelima yang menyebutkan bahwa nilai yang dimasukkan kurang dari atau saama dengan 70 maka siswa tidak lulus. Pada baris keenam, tampilkan keterangan siswa tersebut lulus atau tidak.</p>
+
+<p>Mari implementasikan algoritma tersebut pada program.</p>
+
+<pre><code class="language-c++">#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    int nilai;
+    
+    cout &lt;&lt; &quot;Masukkan nilai :  &quot; &lt;&lt; endl;
+    cin &gt;&gt; nilai;
+    
+    if (nilai &gt; 70)
+        cout &lt;&lt; &quot;Lulus&quot; &lt;&lt; endl;
+    else
+        cout &lt;&lt; &quot;Tidak Lulus&quot; &lt;&lt; endl;
+
+    return 0 ;
+}
+</code></pre>
+
+<p>Bila program di atas dijalankan maka hasilnya adalah sebagai berikut</p>
+
+<pre><code>Masukkan nilai : 80
+Lulus
+</code></pre>
+
+<p>Seperti perintah if, maka perintah if-else juga dapat diikuti pernyataan majemuk. Bentuk umunya adalah sebagai berikut:</p>
+
+<pre><code>if(konsisi)
+    {
+        pernyataan1
+        pernyataan2
+        ...
+        pernyataanm
+    }
+else
+    {
+        pernyataan4
+        pernyataan5
+        ...
+        pernyataann
+    }
+</code></pre>
+
+<p>Misalkan ada suatu permasalahan, anda diminta untuk membuat algoritma dan program untuk menghitung total pembayaran dari pembelian seorang pelanggan toko. Dalam masalah ini ada ketentuan, apabila pembelian pelanggan tersebut sama dengan atau melebihi 100000, maka pelanggan tersebut mendapat discount 10%, jika tidak pelanggan tersebut hanya mendapat discount 5%.</p>
+
+<p>Algoritma dari permasalahan tersebut adalah:</p>
+
+<ol>
+<li>Masukkan pembelian</li>
+<li>Jika pembelian &gt;= 100000, discount = 10%*pembelian</li>
+<li>Total = pembelian-discount</li>
+<li>Jika pembelian &lt; 100000, discount = 5% * pembelian</li>
+<li>Total = pembelian - discount</li>
+<li>Tampilkan pembelian</li>
+<li>Tampilkan discount</li>
+<li>tampilkan total pembayaran</li>
+</ol>
+
+<p>Keterangan dari algoritma di atas:</p>
+
+<p>Pada baris pertama diminta untuk memasukkan input yang berkaitan dengan permasalahan di atas yaitu pembelian. Adapun pembelian tersebut disimpan pada variabel beli. Pada baris kedua, akan dilakukan pengujian dan pengecekan pembelian yang dimasukkan yaitu apabila pembelian pelanggan tersebut sama dengan atau melebihi 100000 atau tidak. Jika jawabannya ya, maka pelanggan tersebut mendapat discount 10% dan untuk menghitung total pembayarannya = pembelian - discount. Untuk discount disimpan dalam variabel disc dan total pembayaran disimpan dalam variabel total. Jika jawabannya tidak , maka baris yang akan dikerjakan dalam program adalah baris keempat dan kelima yaitu pelanggan tersebut hanya mendapat discount 5% dan menghitung total pembayaran dengan rumus = pembelian-discount. Selanjutnya pada baris ke enam sampai delapan, akan ditampilkan pembelian, discount dan total pembayaran.</p>
+
+<p>Sekarang mari kita implementasikan algoritma tersebut</p>
+
+<pre><code class="language-c++">#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    double beli, disc, total;
+    
+    cout &lt;&lt; &quot;Masukkan pembelian :  &quot; &lt;&lt; endl;
+    cin &gt;&gt; beli;
+
+    if (beli &gt;= 100000)
+    {
+        disc = 0.1 * beli;
+        total = beli - disc;
+    }
+    else
+    {
+        disc = 0.05 * beli;
+        total = beli- disc;
+    }
+
+    cout &lt;&lt; &quot;Jadi pembelian adalah  &quot; &lt;&lt; beli &lt;&lt; endl;
+    cout &lt;&lt; &quot;jadi discount adalah  &quot; &lt;&lt; disc &lt;&lt; endl;
+    cout &lt;&lt; &quot;jadi total pembayaran adalah  &quot; &lt;&lt; total &lt;&lt; endl;
+
+    return 0;
+}
+</code></pre>
+
+<p>Bila program tersebut dijalankan maka hasilnya adalah sebagai berikut</p>
+
+<pre><code>masukkan pembelian : 100000
+jadi pembelian adalah : 100000
+jadi discount adalah : 10000
+jadi total pembayaran adalah : 90000
+</code></pre>
+
+<p>Dari program di atas, apabila dimasukkan pembelian, maka sesuai kondisi yang diterapkan di dalam program yaitu <code>beli &gt;= 100000</code>, maka pernyataan pertama yang mengandung pernyataan <code>disc = 0.1 * beli</code> dan <code>total = beli - disc</code> yang akan dikerjakan, yaitu <code>disc = 0.1 * 100000</code> dan <code>total = 100000 - 10000 = 90000</code>, sebaliknya apabila beli yang dimasukkan &lt; 100000 , maka pernyataanya <code>disc = 0.05 * beli</code> dan <code>total = beli - disc</code> yang akan dikerjakan tergantung dari berapa beli yang dimasukkan.</p>
+
+<p>Dari program di atas bisa dilihat apabila kondisi benar maka pernyataan pertama yang akan dikerjakan, dimana dalam pernyataan pertama mengandung 2 unsur pernyataan dan sebaliknya kalau kondisinya salah pernyataan kedua yang akan dikerjakan, juga mengandung 2 unsur pernyataan.</p>
+    
+        </div>
+    </section>
+
+    <footer class="post-full-footer">
+      <section class="author-card">
+        <img class="author-profile-image" src="https://patriotkusuma.github.io/img/logo.png" alt="Author" />
+        <section class="author-card-content">
+            <h4 class="author-card-name"><a href="https://patriotkusuma.github.io/">Patriot Kusuma Sejati</a></h4>
+                <p>Eat, Sleep, Code, Repeat</p>
+        </section>
+      </section>
+    </footer>
+</article>
+    
+    
+    
+ 
+  </div>
+</main>
+
+
+<aside class="read-next outer" >
+  <div class="inner">
+    <div class="read-next-feed">      
+      
+<article class="read-next-card" 
+            style="background-image: url(https://patriotkusuma.github.io/img/blog-cover.jpg);" >
+    <header class="read-next-card-header">
+        <small class="read-next-card-header-sitetitle">&mdash; iPat &mdash;</small>
+        
+    </header>
+    <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+    </div>
+
+    <div class="read-next-card-content">
+      
+        <ul>
+          <li><a href="https://patriotkusuma.github.io/post/c---apa-sih-itu/">C&#43;&#43;, Apa Sih Itu?</a></li>            
+        
+                      
+        
+          <li><a href="https://patriotkusuma.github.io/post/variabel-dan-konstanta-dalam-c--/">VARIABEL DAN KONSTANTA DALAM C&#43;&#43;</a></li>            
+        
+          <li><a href="https://patriotkusuma.github.io/post/program-tabung-dengan-c--/">Program Tabung dengan C&#43;&#43;</a></li>            
+        
+          <li><a href="https://patriotkusuma.github.io/post/lorem-ipsum/">Lorem Ipsum</a></li>            
+        </ul>
+    </div>
+    <footer class="read-next-card-footer">
+      
+    </footer>
+</article>
+
+
+      
+      <article class="post-card post"> 
+    
+    <a class="post-card-image-link" href="https://patriotkusuma.github.io/post/decision-on-c---part-2/">
+      <div class="post-card-image" style="background-image: url(https://patriotkusuma.github.io/uploads/decision.jpeg)"></div>
+    </a>
+    
+
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="https://patriotkusuma.github.io/post/decision-on-c---part-2/">
+          <header class="post-card-header">
+              
+              <h2 class="post-card-title">Decision on C&#43;&#43; Part 2</h2>
+          </header>
+          <section class="post-card-excerpt">
+              
+                <p>Hello Everyone,
+Welcome to my site.
+Kali ini saya akan melanjutkan tulisan saya tentang Decision,
+Decision on C++ Part 1
+3. Perintah IF dalam IF Perintah if dalam if sering disebut nested-if. perintah ini mempunyai bentuk umum sebagai berikut:
+if(kondisi1) if(kondisi2) pernyataan1; else pernyataan2; else pernyataan3;  Pernyataan if dalam if juga mempunyai bentuk yang majemuk yang sering disebut if bertingkat. Bentuk umumnya adalah sebagai berikut:
+if(kondisi1) pernyataan1; else if(kondisi2) pernyataan2; else if(kondisi3) pernyataan3; else if(kondisi4) pernyataan4; . ...  </p>
+              
+          </section>
+      </a>
+
+      <footer class="post-card-meta">
+          <img class="author-profile-image" src="https://patriotkusuma.github.io/img/logo.png" alt="Author" />
+          <span class="post-card-author"><a href="https://patriotkusuma.github.io/">Patriot Kusuma Sejati</a></span>
+      </footer>
+    </div>
+</article>
+      
+      
+      <article class="post-card post"> 
+    
+    <a class="post-card-image-link" href="https://patriotkusuma.github.io/post/dasar-input-dan-output-dalam-c--/">
+      <div class="post-card-image" style="background-image: url(https://patriotkusuma.github.io/uploads/input.jpeg)"></div>
+    </a>
+    
+
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="https://patriotkusuma.github.io/post/dasar-input-dan-output-dalam-c--/">
+          <header class="post-card-header">
+              
+              <h2 class="post-card-title">Dasar Input dan Output dalam C&#43;&#43;</h2>
+          </header>
+          <section class="post-card-excerpt">
+              
+                <p>Hello everyone,
+Welcome to my site.
+Kali ini kita akan membahas tentang input dan ouput pada C++ dan memberikan sedikit ilmu tentang string. Biasanya i/o (input/ouput), membentuk bagian yang penting dari sebuah program. Untuk membuat suatu yang berguna, program harus bisa menerima masukan data dan menghasilkan ouput. Pada C++, input output disediakan oleh library yang bernama iostream. Untuk menggunakannya, bisa dengan perintah #include &lt;iostream&gt; di bagian atas program yang kita buat. ...  </p>
+              
+          </section>
+      </a>
+
+      <footer class="post-card-meta">
+          <img class="author-profile-image" src="https://patriotkusuma.github.io/img/logo.png" alt="Author" />
+          <span class="post-card-author"><a href="https://patriotkusuma.github.io/">Patriot Kusuma Sejati</a></span>
+      </footer>
+    </div>
+</article>
+      
+    </div>
+  </div>
+</aside>
+
+<div class="floating-header">
+  <div class="floating-header-logo">
+    <a href="https://patriotkusuma.github.io/">
+      
+      <span></span>
+    </a>
+  </div>
+  <span class="floating-header-divider">&mdash;</span>
+  <div class="floating-header-title">Decision on C&#43;&#43; Part 1</div>
+  <div class="floating-header-share">
+    <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
+    </div>
+    
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=Decision%20on%20C%2b%2b%20Part%201&amp;url=https%3a%2f%2fpatriotkusuma.github.io%2fpost%2fdecision-on-c---part-1%2f"
+          onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+      </a>
+      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpatriotkusuma.github.io%2fpost%2fdecision-on-c---part-1%2f"
+          onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+      </a>
+  </div>
+
+  <progress class="progress" value="0">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+</div>
+
+
+
+<footer class="site-footer outer">
+  <div class="site-footer-content inner">
+    <section class="copyright" style="line-height: 1.3em;">
+      <a href="https://patriotkusuma.github.io/">iPat</a> © 2018 <br>
+      <span style="font-size: 0.8em; color: #555;">Hugo port of <a href="https://github.com/TryGhost/Casper">Casper 2.1.7</a> by <a href="https://www.telematika.org">EM</a></span>
+    </section>
+    <nav class="site-footer-nav">
+        <a href="https://patriotkusuma.github.io/">Latest Posts</a>
+        <a href="https://www.facebook.com/patriotkusumasejati" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://instagram.com/patriotkusuma" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://github.com/patriotkusuma" target="_blank" rel="noopener">Github</a>
+        
+    </nav>  
+  </div>
+</footer>
+
+</div>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://patriotkusuma.github.io/js/jquery.fitvids.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+    <script>
+
+
+
+
+
+$(document).ready(function () {
+    
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+</body></html>

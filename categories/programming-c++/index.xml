@@ -6,10 +6,50 @@
     <description>Recent content in Programming C&#43;&#43; on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 12 Nov 2018 12:27:31 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 13 Nov 2018 22:37:39 +0700</lastBuildDate>
     
 	<atom:link href="https://patriotkusuma.github.io/categories/programming-c++/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Aplikasi Kasir Sederhana dengan c&#43;&#43;</title>
+      <link>https://patriotkusuma.github.io/post/aplikasi-kasir-sederhana-dengan-c--/</link>
+      <pubDate>Tue, 13 Nov 2018 22:37:39 +0700</pubDate>
+      
+      <guid>https://patriotkusuma.github.io/post/aplikasi-kasir-sederhana-dengan-c--/</guid>
+      <description>Hello everyone,
+Welcome to my site.
+Membuat Program untuk menampilkan pembelian yang harus dibayarkan oleh seorang pelanggan apabila diketahui kondisi beikut ini:
+Beli = harga barang * jumlah barang Jika jumlah barang &amp;gt; 20 maka discount = beli * 15% jika tidak discount = beli * 5%  Dimana : Total bayar = beli - discount
+Input : harga barang, jumlah barang
+Output : beli, discount, dan total bayar
+Algoritma</description>
+    </item>
+    
+    <item>
+      <title>Decision on C&#43;&#43; Part 2</title>
+      <link>https://patriotkusuma.github.io/post/decision-on-c---part-2/</link>
+      <pubDate>Tue, 13 Nov 2018 19:48:16 +0700</pubDate>
+      
+      <guid>https://patriotkusuma.github.io/post/decision-on-c---part-2/</guid>
+      <description>Hello Everyone,
+Welcome to my site.
+Kali ini saya akan melanjutkan tulisan saya tentang Decision,
+Decision on C++ Part 1
+3. Perintah IF dalam IF Perintah if dalam if sering disebut nested-if. perintah ini mempunyai bentuk umum sebagai berikut:
+if(kondisi1) if(kondisi2) pernyataan1; else pernyataan2; else pernyataan3;  Pernyataan if dalam if juga mempunyai bentuk yang majemuk yang sering disebut if bertingkat. Bentuk umumnya adalah sebagai berikut:
+if(kondisi1) pernyataan1; else if(kondisi2) pernyataan2; else if(kondisi3) pernyataan3; else if(kondisi4) pernyataan4; .</description>
+    </item>
+    
+    <item>
+      <title>Decision on C&#43;&#43; Part 1</title>
+      <link>https://patriotkusuma.github.io/post/decision-on-c---part-1/</link>
+      <pubDate>Mon, 12 Nov 2018 17:03:10 +0700</pubDate>
+      
+      <guid>https://patriotkusuma.github.io/post/decision-on-c---part-1/</guid>
+      <description>Decision atau pengambilan keputusan merupakan salah satu implementasi algritma dalam pemecahan suatu masalah dengan berbagai alternatif jawaban yang tersedia dan anda harus mengambil keputusan untuk memilih salah satu jawaban yang tepat. Perintah pengambilan keputusan (decision) digunakan untuk memilih salah satu alternatif jawaban yang tepat dari pilihan yang ada. C++ menyediakan dua perintah pengambilan keputusan yaitu perintah IF dan perintah SWITCH yang disertai dengan CASE.
+1. Pernyataan IF Pernyataan if digunakan untuk memilih satu dari 2 atau lebih alternatif jawaban yang tersedia.</description>
+    </item>
     
     <item>
       <title>Dasar Input dan Output dalam C&#43;&#43;</title>
