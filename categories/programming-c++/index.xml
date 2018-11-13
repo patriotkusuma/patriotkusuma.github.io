@@ -19,11 +19,9 @@
       <guid>https://patriotkusuma.github.io/post/aplikasi-kasir-sederhana-dengan-c--/</guid>
       <description>Hello everyone,
 Welcome to my site.
-Membuat Program untuk menampilkan pembelian yang harus dibayarkan oleh seorang pelanggan apabila diketahui kondisi beikut ini:
-Beli = harga barang * jumlah barang Jika jumlah barang &amp;gt; 20 maka discount = beli * 15% jika tidak discount = beli * 5%  Dimana : Total bayar = beli - discount
-Input : harga barang, jumlah barang
-Output : beli, discount, dan total bayar
-Algoritma</description>
+Sebelumnya kita sudah membahas tentang operasi keputusan (decision) pada c++ Decision on C++ Part 1 Decision on c++ Part 2, sekarang saat nya kita mencoba mengimplementasikan pada sebuah progam kasir sederhana.
+Kali ini kita akan membuat program kasir untuk menampilkan pembelian yang harus dibayarkan oleh seorang pelanggan dengan ketntuan sebagi beikut:
+Beli = harga barang * jumlah barang Jika jumlah barang &amp;gt; 20 maka discount = beli * 15% jika tidak discount = beli * 5%  Dimana : Total bayar = beli - discount</description>
     </item>
     
     <item>
